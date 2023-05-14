@@ -12,6 +12,8 @@ import {
 import { Any } from "cosmjs-types/google/protobuf/any";
 import Long from "long";
 
+import { EthAccount } from "@quadrateorg/quadjs-types/ethermint/v1beta1/auth";
+
 export interface Account {
   /** Bech32 account address */
   readonly address: string;
@@ -26,6 +28,19 @@ function uint64FromProto(input: number | Long): Uint64 {
 
 function accountFromBaseAccount(input: BaseAccount): Account {
   const { address, pubKey, accountNumber, sequence } = input;
+  const pubkey = pubKey ? decodePubkey(pubKey) : null;
+  return {
+    address: address,
+    pubkey: pubkey,
+    accountNumber: uint64FromProto(accountNumber).toNumber(),
+    sequence: uint64FromProto(sequence).toNumber(),
+  };
+}
+
+function accountFromEthAccount(input: EthAccount): Account {
+  const { base_account, code_hash } = input;
+  if(base_account === undefined) { throw new Error("Account not found"); }
+  const { address, pubKey, accountNumber, sequence } = base_account;
   const pubkey = pubKey ? decodePubkey(pubKey) : null;
   return {
     address: address,
@@ -51,6 +66,10 @@ export function accountFromAny(input: Any): Account {
 
   switch (typeUrl) {
     // auth
+
+    case "/ethermint.types.v1.EthAccount": {
+      return accountFromEthAccount(EthAccount.decode(value));
+    }
 
     case "/cosmos.auth.v1beta1.BaseAccount":
       return accountFromBaseAccount(BaseAccount.decode(value));

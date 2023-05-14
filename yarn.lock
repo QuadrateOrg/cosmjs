@@ -855,6 +855,7 @@ __metadata:
     "@cosmjs/tendermint-rpc": "workspace:^"
     "@cosmjs/utils": "workspace:^"
     "@istanbuljs/nyc-config-typescript": ^1.0.1
+    "@quadrateorg/quadjs-types": ^0.1.0
     "@types/eslint-plugin-prettier": ^3
     "@types/jasmine": ^4
     "@types/karma-firefox-launcher": ^2
@@ -1348,6 +1349,16 @@ __metadata:
   version: 1.1.0
   resolution: "@protobufjs/utf8@npm:1.1.0"
   checksum: f9bf3163d13aaa3b6f5e6fbf37a116e094ea021c0e1f2a7ccd0e12a29e2ce08dafba4e8b36e13f8ed7397e1591610ce880ed1289af4d66cf4ace8a36a9557278
+  languageName: node
+  linkType: hard
+
+"@quadrateorg/quadjs-types@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@quadrateorg/quadjs-types@npm:0.1.0"
+  dependencies:
+    long: ^4.0.0
+    protobufjs: ~6.11.2
+  checksum: e2a2b0594e2788d7d6c4eb27a30a208664efdda2459a52bc71d86b6343372d270b32bd5e1238fd24e646649e0daa8efbb466a9306f4357a3445321803f1c2420
   languageName: node
   linkType: hard
 

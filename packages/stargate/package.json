@@ -46,6 +46,7 @@
     "@cosmjs/stream": "workspace:^",
     "@cosmjs/tendermint-rpc": "workspace:^",
     "@cosmjs/utils": "workspace:^",
+    "@quadrateorg/quadjs-types": "^0.1.0",
     "cosmjs-types": "^0.7.1",
     "long": "^4.0.0",
     "protobufjs": "~6.11.3",

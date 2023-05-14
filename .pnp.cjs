@@ -411,6 +411,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "npm:1.1.0"\
       ],\
       [\
+        "@quadrateorg/quadjs-types",\
+        "npm:0.1.0"\
+      ],\
+      [\
         "@socket.io/component-emitter",\
         "npm:3.1.0"\
       ],\
@@ -3751,6 +3755,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@cosmjs/tendermint-rpc", "workspace:packages/tendermint-rpc"],\
             ["@cosmjs/utils", "workspace:packages/utils"],\
             ["@istanbuljs/nyc-config-typescript", "virtual:4f1584ad4aba8733a24be7c8aebbffafef25607f2d00f4b314cf96717145c692763628a31c2b85d4686fbb091ff21ebffa3cc337399c042c19a32b9bdb786464#npm:1.0.1"],\
+            ["@quadrateorg/quadjs-types", "npm:0.1.0"],\
             ["@types/eslint-plugin-prettier", "npm:3.1.0"],\
             ["@types/jasmine", "npm:4.0.3"],\
             ["@types/karma-firefox-launcher", "npm:2.1.0"],\
@@ -4318,6 +4323,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@protobufjs-utf8-npm-1.1.0-02c590807c-f9bf3163d1.zip/node_modules/@protobufjs/utf8/",\
           "packageDependencies": [\
             ["@protobufjs/utf8", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@quadrateorg/quadjs-types", [\
+        ["npm:0.1.0", {\
+          "packageLocation": "./.yarn/cache/@quadrateorg-quadjs-types-npm-0.1.0-0f1f624267-e2a2b0594e.zip/node_modules/@quadrateorg/quadjs-types/",\
+          "packageDependencies": [\
+            ["@quadrateorg/quadjs-types", "npm:0.1.0"],\
+            ["long", "npm:4.0.0"],\
+            ["protobufjs", "npm:6.11.3"]\
           ],\
           "linkType": "HARD"\
         }]\
