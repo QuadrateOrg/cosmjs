@@ -1,15 +1,15 @@
 import { Pubkey } from "@cosmjs/amino";
 import { encodePubkey } from "@cosmjs/proto-signing";
-import { SignMode } from "@quadrateorg/quadjs-types/cosmos/tx/signing/v1beta1/signing";
+import { SignMode } from "cosmjs-types/cosmos/tx/signing/v1beta1/signing";
 import {
   GetTxRequest,
   GetTxResponse,
   ServiceClientImpl,
   SimulateRequest,
   SimulateResponse,
-} from "@quadrateorg/quadjs-types/cosmos/tx/v1beta1/service";
-import { AuthInfo, Fee, Tx, TxBody } from "@quadrateorg/quadjs-types/cosmos/tx/v1beta1/tx";
-import { Any } from "@quadrateorg/quadjs-types/google/protobuf/any";
+} from "cosmjs-types/cosmos/tx/v1beta1/service";
+import { AuthInfo, Fee, Tx, TxBody } from "cosmjs-types/cosmos/tx/v1beta1/tx";
+import { Any } from "cosmjs-types/google/protobuf/any";
 import Long from "long";
 
 import { createProtobufRpcClient, QueryClient } from "../../queryclient";

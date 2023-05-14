@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { coin } from "@cosmjs/proto-signing";
-import { MsgTransfer } from "@quadrateorg/quadjs-types/ibc/applications/transfer/v1/tx";
+import { MsgTransfer } from "cosmjs-types/ibc/applications/transfer/v1/tx";
 import Long from "long";
 
 import { AminoTypes } from "../../aminotypes";

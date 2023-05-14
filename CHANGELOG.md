@@ -28,7 +28,7 @@ and this project adheres to
 
 - all: The TypeScript compilation target is now ES2020 ([#1002]).
 - all: Add full support for Node.js 18 and run all CI tests with it ([#1240]).
-- all: Upgrade @quadrateorg/quadjs-types to 0.7.
+- all: Upgrade cosmjs-types to 0.7.
 - @cosmjs/tendermint-rpc: Remove unused `index` field from `RpcTxEvent` and
   `TxEvent`. This is unset starting with Tendermint 0.34.
 - @cosmjs/proto-signing: Make input and output of `decodePubkey` non-optional
@@ -259,7 +259,7 @@ and this project adheres to
 
 ### Changed
 
-- all: Upgrade @quadrateorg/quadjs-types to 0.5 ([#1131]).
+- all: Upgrade cosmjs-types to 0.5 ([#1131]).
 - all: Drop support for Node.js < 14.
 - all: Use caret version for internal dependencies' version ranges ([#1254]).
 - @cosmjs/stargate: Change `packetCommitment` parameter `sequence` type from
@@ -553,7 +553,7 @@ recent minor version if they run into trouble.
   code that only needs to support one backend. ([#865])
 - @cosmjs/tendermint-rpc: Remove default URL from `HttpClient` and
   `WebsocketClient` constructors ([#897]).
-- all: Upgrade @quadrateorg/quadjs-types to 0.4. This includes the types of the Cosmos SDK
+- all: Upgrade cosmjs-types to 0.4. This includes the types of the Cosmos SDK
   0.44 modules x/authz and x/feegrant. It causes a few breaking changes by
   adding fields to interfaces as well as changing `Date` to a `Timestamp`
   object. ([#928])

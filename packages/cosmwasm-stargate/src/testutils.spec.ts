@@ -19,8 +19,8 @@ import {
   setupBankExtension,
 } from "@cosmjs/stargate";
 import { Tendermint34Client } from "@cosmjs/tendermint-rpc";
-import { SignMode } from "@quadrateorg/quadjs-types/cosmos/tx/signing/v1beta1/signing";
-import { AuthInfo, SignDoc, TxBody } from "@quadrateorg/quadjs-types/cosmos/tx/v1beta1/tx";
+import { SignMode } from "cosmjs-types/cosmos/tx/signing/v1beta1/signing";
+import { AuthInfo, SignDoc, TxBody } from "cosmjs-types/cosmos/tx/v1beta1/tx";
 
 import { setupWasmExtension, WasmExtension } from "./modules";
 import { SigningCosmWasmClientOptions } from "./signingcosmwasmclient";

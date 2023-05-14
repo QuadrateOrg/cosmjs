@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { fromBase64 } from "@cosmjs/encoding";
-import { Any } from "@quadrateorg/quadjs-types/google/protobuf/any";
+import { Any } from "cosmjs-types/google/protobuf/any";
 
 import { decodePubkey, encodePubkey } from "./pubkey";
 

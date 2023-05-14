@@ -5,7 +5,7 @@ import {
   MsgSetWithdrawAddress,
   MsgWithdrawDelegatorReward,
   MsgWithdrawValidatorCommission,
-} from "@quadrateorg/quadjs-types/cosmos/distribution/v1beta1/tx";
+} from "cosmjs-types/cosmos/distribution/v1beta1/tx";
 
 import { AminoTypes } from "../../aminotypes";
 import {

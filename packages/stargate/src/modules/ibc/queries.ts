@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { toAscii } from "@cosmjs/encoding";
 import { Uint64 } from "@cosmjs/math";
-import { Any } from "@quadrateorg/quadjs-types/google/protobuf/any";
+import { Any } from "cosmjs-types/google/protobuf/any";
 import {
   QueryClientImpl as TransferQuery,
   QueryDenomTraceResponse,
   QueryDenomTracesResponse,
   QueryParamsResponse as QueryTransferParamsResponse,
-} from "@quadrateorg/quadjs-types/ibc/applications/transfer/v1/query";
-import { Channel } from "@quadrateorg/quadjs-types/ibc/core/channel/v1/channel";
+} from "cosmjs-types/ibc/applications/transfer/v1/query";
+import { Channel } from "cosmjs-types/ibc/core/channel/v1/channel";
 import {
   QueryChannelClientStateResponse,
   QueryChannelConsensusStateResponse,
@@ -25,8 +25,8 @@ import {
   QueryPacketReceiptResponse,
   QueryUnreceivedAcksResponse,
   QueryUnreceivedPacketsResponse,
-} from "@quadrateorg/quadjs-types/ibc/core/channel/v1/query";
-import { Height } from "@quadrateorg/quadjs-types/ibc/core/client/v1/client";
+} from "cosmjs-types/ibc/core/channel/v1/query";
+import { Height } from "cosmjs-types/ibc/core/client/v1/client";
 import {
   QueryClientImpl as ClientQuery,
   QueryClientParamsResponse,
@@ -35,7 +35,7 @@ import {
   QueryConsensusStateRequest,
   QueryConsensusStateResponse,
   QueryConsensusStatesResponse,
-} from "@quadrateorg/quadjs-types/ibc/core/client/v1/query";
+} from "cosmjs-types/ibc/core/client/v1/query";
 import {
   QueryClientConnectionsResponse,
   QueryClientImpl as ConnectionQuery,
@@ -44,11 +44,11 @@ import {
   QueryConnectionConsensusStateResponse,
   QueryConnectionResponse,
   QueryConnectionsResponse,
-} from "@quadrateorg/quadjs-types/ibc/core/connection/v1/query";
+} from "cosmjs-types/ibc/core/connection/v1/query";
 import {
   ClientState as TendermintClientState,
   ConsensusState as TendermintConsensusState,
-} from "@quadrateorg/quadjs-types/ibc/lightclients/tendermint/v1/tendermint";
+} from "cosmjs-types/ibc/lightclients/tendermint/v1/tendermint";
 import Long from "long";
 
 import { createPagination, createProtobufRpcClient, QueryClient } from "../../queryclient";
