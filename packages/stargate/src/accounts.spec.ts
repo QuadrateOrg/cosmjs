@@ -1,5 +1,5 @@
 import { fromBase64 } from "@cosmjs/encoding";
-import { Any } from "cosmjs-types/google/protobuf/any";
+import { Any } from "@quadrateorg/quadjs-types/google/protobuf/any";
 
 import { accountFromAny } from "./accounts";
 

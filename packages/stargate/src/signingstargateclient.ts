@@ -14,13 +14,13 @@ import {
 } from "@cosmjs/proto-signing";
 import { HttpEndpoint, Tendermint34Client, TendermintClient } from "@cosmjs/tendermint-rpc";
 import { assert, assertDefined } from "@cosmjs/utils";
-import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
-import { MsgWithdrawDelegatorReward } from "cosmjs-types/cosmos/distribution/v1beta1/tx";
-import { MsgDelegate, MsgUndelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
-import { SignMode } from "cosmjs-types/cosmos/tx/signing/v1beta1/signing";
-import { TxRaw } from "cosmjs-types/cosmos/tx/v1beta1/tx";
-import { MsgTransfer } from "cosmjs-types/ibc/applications/transfer/v1/tx";
-import { Height } from "cosmjs-types/ibc/core/client/v1/client";
+import { Coin } from "@quadrateorg/quadjs-types/cosmos/base/v1beta1/coin";
+import { MsgWithdrawDelegatorReward } from "@quadrateorg/quadjs-types/cosmos/distribution/v1beta1/tx";
+import { MsgDelegate, MsgUndelegate } from "@quadrateorg/quadjs-types/cosmos/staking/v1beta1/tx";
+import { SignMode } from "@quadrateorg/quadjs-types/cosmos/tx/signing/v1beta1/signing";
+import { TxRaw } from "@quadrateorg/quadjs-types/cosmos/tx/v1beta1/tx";
+import { MsgTransfer } from "@quadrateorg/quadjs-types/ibc/applications/transfer/v1/tx";
+import { Height } from "@quadrateorg/quadjs-types/ibc/core/client/v1/client";
 import Long from "long";
 
 import { AminoConverters, AminoTypes } from "./aminotypes";

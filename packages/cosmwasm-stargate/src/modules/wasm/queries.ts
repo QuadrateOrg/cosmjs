@@ -9,7 +9,7 @@ import {
   QueryContractInfoResponse,
   QueryContractsByCodeResponse,
   QueryRawContractStateResponse,
-} from "cosmjs-types/cosmwasm/wasm/v1/query";
+} from "@quadrateorg/quadjs-types/cosmwasm/wasm/v1/query";
 import Long from "long";
 
 /**

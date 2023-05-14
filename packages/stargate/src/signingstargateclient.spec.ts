@@ -10,14 +10,14 @@ import {
 } from "@cosmjs/proto-signing";
 import { Tendermint34Client } from "@cosmjs/tendermint-rpc";
 import { assert, sleep } from "@cosmjs/utils";
-import { DeepPartial } from "cosmjs-types";
-import { MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";
-import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
-import { BasicAllowance } from "cosmjs-types/cosmos/feegrant/v1beta1/feegrant";
-import { MsgGrantAllowance } from "cosmjs-types/cosmos/feegrant/v1beta1/tx";
-import { MsgDelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
-import { AuthInfo, TxBody, TxRaw } from "cosmjs-types/cosmos/tx/v1beta1/tx";
-import { Any } from "cosmjs-types/google/protobuf/any";
+import { DeepPartial } from "@quadrateorg/quadjs-types";
+import { MsgSend } from "@quadrateorg/quadjs-types/cosmos/bank/v1beta1/tx";
+import { Coin } from "@quadrateorg/quadjs-types/cosmos/base/v1beta1/coin";
+import { BasicAllowance } from "@quadrateorg/quadjs-types/cosmos/feegrant/v1beta1/feegrant";
+import { MsgGrantAllowance } from "@quadrateorg/quadjs-types/cosmos/feegrant/v1beta1/tx";
+import { MsgDelegate } from "@quadrateorg/quadjs-types/cosmos/staking/v1beta1/tx";
+import { AuthInfo, TxBody, TxRaw } from "@quadrateorg/quadjs-types/cosmos/tx/v1beta1/tx";
+import { Any } from "@quadrateorg/quadjs-types/google/protobuf/any";
 import Long from "long";
 import protobuf from "protobufjs/minimal";
 

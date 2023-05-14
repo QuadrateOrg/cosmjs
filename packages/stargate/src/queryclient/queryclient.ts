@@ -4,7 +4,7 @@ import { toAscii, toHex } from "@cosmjs/encoding";
 import { firstEvent } from "@cosmjs/stream";
 import { tendermint34, TendermintClient } from "@cosmjs/tendermint-rpc";
 import { arrayContentEquals, assert, assertDefined, isNonNullObject, sleep } from "@cosmjs/utils";
-import { ProofOps } from "cosmjs-types/tendermint/crypto/proof";
+import { ProofOps } from "@quadrateorg/quadjs-types/tendermint/crypto/proof";
 import { Stream } from "xstream";
 
 type QueryExtensionSetup<P> = (base: QueryClient) => P;

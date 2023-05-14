@@ -8,7 +8,7 @@ import {
   MsgMigrateContract,
   MsgStoreCode,
   MsgUpdateAdmin,
-} from "cosmjs-types/cosmwasm/wasm/v1/tx";
+} from "@quadrateorg/quadjs-types/cosmwasm/wasm/v1/tx";
 import Long from "long";
 
 // TODO: implement

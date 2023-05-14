@@ -14,12 +14,12 @@ import {
   MsgSendEncodeObject,
 } from "@cosmjs/stargate";
 import { assert, sleep } from "@cosmjs/utils";
-import { DeepPartial } from "cosmjs-types";
-import { MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";
-import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
-import { MsgDelegate } from "cosmjs-types/cosmos/staking/v1beta1/tx";
-import { AuthInfo, TxBody, TxRaw } from "cosmjs-types/cosmos/tx/v1beta1/tx";
-import { MsgExecuteContract, MsgStoreCode } from "cosmjs-types/cosmwasm/wasm/v1/tx";
+import { DeepPartial } from "@quadrateorg/quadjs-types";
+import { MsgSend } from "@quadrateorg/quadjs-types/cosmos/bank/v1beta1/tx";
+import { Coin } from "@quadrateorg/quadjs-types/cosmos/base/v1beta1/coin";
+import { MsgDelegate } from "@quadrateorg/quadjs-types/cosmos/staking/v1beta1/tx";
+import { AuthInfo, TxBody, TxRaw } from "@quadrateorg/quadjs-types/cosmos/tx/v1beta1/tx";
+import { MsgExecuteContract, MsgStoreCode } from "@quadrateorg/quadjs-types/cosmwasm/wasm/v1/tx";
 import Long from "long";
 import pako from "pako";
 import protobuf from "protobufjs/minimal";

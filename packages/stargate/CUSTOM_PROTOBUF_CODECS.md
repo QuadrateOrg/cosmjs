@@ -43,7 +43,7 @@ You will need these files locally. There are two ways this is typically done:
    to download the definition files from the Cosmos SDK repository.
 2. **Git submodules** allow linking external repositories into the current
    project's git. This is done in
-   [the cosmjs-types repo](https://github.com/confio/cosmjs-types).
+   [the @quadrateorg/quadjs-types repo](https://github.com/confio/@quadrateorg/quadjs-types).
 
 If the proto files are not publicly available, the first way should be
 preferred. Otherwise permission management can become very complicated.
@@ -84,10 +84,10 @@ helps. The name of the script renames the protoc plugin from `ts_proto` to
 `ts_proto_yarn_2` and the `protoc` must now be prefixed accordingly, like
 `--ts_proto_yarn_2_opt="…"`.
 
-A full example is available in the cosmjs-types repo:
-[protoc-gen-ts_proto_yarn_2](https://github.com/confio/cosmjs-types/blob/v0.2.1/bin/protoc-gen-ts_proto_yarn_2)
+A full example is available in the @quadrateorg/quadjs-types repo:
+[protoc-gen-ts_proto_yarn_2](https://github.com/confio/@quadrateorg/quadjs-types/blob/v0.2.1/bin/protoc-gen-ts_proto_yarn_2)
 and
-[codegen.sh](https://github.com/confio/cosmjs-types/blob/v0.2.1/scripts/codegen.sh).
+[codegen.sh](https://github.com/confio/@quadrateorg/quadjs-types/blob/v0.2.1/scripts/codegen.sh).
 
 ### Step 3
 

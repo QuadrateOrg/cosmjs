@@ -1,5 +1,5 @@
 import { EncodeObject, GeneratedType } from "@cosmjs/proto-signing";
-import { MsgDeposit, MsgSubmitProposal, MsgVote, MsgVoteWeighted } from "cosmjs-types/cosmos/gov/v1beta1/tx";
+import { MsgDeposit, MsgSubmitProposal, MsgVote, MsgVoteWeighted } from "@quadrateorg/quadjs-types/cosmos/gov/v1beta1/tx";
 
 export const govTypes: ReadonlyArray<[string, GeneratedType]> = [
   ["/cosmos.gov.v1beta1.MsgDeposit", MsgDeposit],

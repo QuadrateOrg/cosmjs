@@ -2,7 +2,7 @@ import {
   QueryAllowanceResponse,
   QueryAllowancesResponse,
   QueryClientImpl,
-} from "cosmjs-types/cosmos/feegrant/v1beta1/query";
+} from "@quadrateorg/quadjs-types/cosmos/feegrant/v1beta1/query";
 
 import { createPagination, createProtobufRpcClient, QueryClient } from "../../queryclient";
 

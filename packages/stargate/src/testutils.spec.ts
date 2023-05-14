@@ -9,8 +9,8 @@ import {
   DirectSignResponse,
   makeAuthInfoBytes,
 } from "@cosmjs/proto-signing";
-import { SignMode } from "cosmjs-types/cosmos/tx/signing/v1beta1/signing";
-import { AuthInfo, SignDoc, TxBody } from "cosmjs-types/cosmos/tx/v1beta1/tx";
+import { SignMode } from "@quadrateorg/quadjs-types/cosmos/tx/signing/v1beta1/signing";
+import { AuthInfo, SignDoc, TxBody } from "@quadrateorg/quadjs-types/cosmos/tx/v1beta1/tx";
 
 import { calculateFee, GasPrice } from "./fee";
 import { SigningStargateClientOptions } from "./signingstargateclient";

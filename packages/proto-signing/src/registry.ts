@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";
-import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
-import { TxBody } from "cosmjs-types/cosmos/tx/v1beta1/tx";
-import { Any } from "cosmjs-types/google/protobuf/any";
+import { MsgSend } from "@quadrateorg/quadjs-types/cosmos/bank/v1beta1/tx";
+import { Coin } from "@quadrateorg/quadjs-types/cosmos/base/v1beta1/coin";
+import { TxBody } from "@quadrateorg/quadjs-types/cosmos/tx/v1beta1/tx";
+import { Any } from "@quadrateorg/quadjs-types/google/protobuf/any";
 import Long from "long";
 import type protobuf from "protobufjs";
 

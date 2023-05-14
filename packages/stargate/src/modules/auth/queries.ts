@@ -1,5 +1,5 @@
-import { QueryClientImpl } from "cosmjs-types/cosmos/auth/v1beta1/query";
-import { Any } from "cosmjs-types/google/protobuf/any";
+import { QueryClientImpl } from "@quadrateorg/quadjs-types/cosmos/auth/v1beta1/query";
+import { Any } from "@quadrateorg/quadjs-types/google/protobuf/any";
 
 import { createProtobufRpcClient, QueryClient } from "../../queryclient";
 
