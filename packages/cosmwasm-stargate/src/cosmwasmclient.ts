@@ -24,7 +24,7 @@ import {
   setupTxExtension,
   TimeoutError,
   TxExtension,
-} from "@cosmjs/stargate";
+} from "@quadrateorg/stargate";
 import {
   HttpEndpoint,
   Tendermint34Client,
@@ -274,7 +274,7 @@ export class CosmWasmClient {
    * If the transaction is included in a block, a `DeliverTxResponse` is returned. The caller then
    * usually needs to check for execution success or failure.
    */
-  // NOTE: This method is tested against slow chains and timeouts in the @cosmjs/stargate package.
+  // NOTE: This method is tested against slow chains and timeouts in the @quadrateorg/stargate package.
   // Make sure it is kept in sync!
   public async broadcastTx(
     tx: Uint8Array,

@@ -12,7 +12,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "cosmjs-monorepo-root",\
+        "name": "@quadrateorg/quadjs",\
         "reference": "workspace:."\
       },\
       {\
@@ -99,7 +99,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@cosmjs/stream", ["workspace:packages/stream"]],\
       ["@cosmjs/tendermint-rpc", ["workspace:packages/tendermint-rpc"]],\
       ["@cosmjs/utils", ["workspace:packages/utils"]],\
-      ["cosmjs-monorepo-root", ["workspace:."]]\
+      ["@quadrateorg/quadjs", ["workspace:."]]\
     ],\
     "fallbackPool": [\
       [\
@@ -4327,6 +4327,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@quadrateorg/quadjs", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["@quadrateorg/quadjs", "workspace:."],\
+            ["@cosmjs/amino", "workspace:packages/amino"],\
+            ["@cosmjs/cosmwasm-stargate", "workspace:packages/cosmwasm-stargate"],\
+            ["@cosmjs/crypto", "workspace:packages/crypto"],\
+            ["@cosmjs/encoding", "workspace:packages/encoding"],\
+            ["@cosmjs/proto-signing", "workspace:packages/proto-signing"],\
+            ["@cosmjs/stargate", "workspace:packages/stargate"],\
+            ["eslint", "npm:7.26.0"],\
+            ["prettier", "npm:2.8.1"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["@quadrateorg/quadjs-types", [\
         ["npm:0.1.0", {\
           "packageLocation": "./.yarn/cache/@quadrateorg-quadjs-types-npm-0.1.0-0f1f624267-e2a2b0594e.zip/node_modules/@quadrateorg/quadjs-types/",\
@@ -6987,24 +7005,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vary", "npm:1.1.2"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["cosmjs-monorepo-root", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["cosmjs-monorepo-root", "workspace:."],\
-            ["@cosmjs/amino", "workspace:packages/amino"],\
-            ["@cosmjs/cosmwasm-stargate", "workspace:packages/cosmwasm-stargate"],\
-            ["@cosmjs/crypto", "workspace:packages/crypto"],\
-            ["@cosmjs/encoding", "workspace:packages/encoding"],\
-            ["@cosmjs/proto-signing", "workspace:packages/proto-signing"],\
-            ["@cosmjs/stargate", "workspace:packages/stargate"],\
-            ["eslint", "npm:7.26.0"],\
-            ["prettier", "npm:2.8.1"],\
-            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]],\
       ["cosmjs-types", [\
